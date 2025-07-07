@@ -69,7 +69,7 @@ class LayerSearchDialog(QDialog, FORM_CLASS):
         self.results2LayersButton.clicked.connect(self.exportResults)
         self.layerListComboBox.activated.connect(self.layerSelected)
         self.searchFieldComboBox.addItems([tr('<All Fields>')])
-        self.maxResults = 2000
+        self.maxResults = 5000
         self.resultsTable.setEditTriggers(QTableWidget.NoEditTriggers)
         self.resultsTable.setColumnCount(4)
         self.resultsTable.setSortingEnabled(True)
